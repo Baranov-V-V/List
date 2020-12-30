@@ -1,0 +1,52 @@
+digraph structs {
+    rankdir=LR
+    node [shape="record", style="filled", color="#008000", fillcolor="#C0FFC0"];    "list_node0" [fillcolor="crimson", label ="<index> index\n 0 |{<value> value\n 1.#QNAN0 |<next> next\n 0 |<prev> prev\n 0}"]
+    "list_node1" [fillcolor="#C0FFC0", label ="<index> index\n 1 |{<value> value\n -10.000000 |<next> next\n 7 |<prev> prev\n 2}"]
+    "list_node2" [fillcolor="#C0FFC0", label ="<index> index\n 2 |{<value> value\n 10.000000 |<next> next\n 1 |<prev> prev\n 4}"]
+    "list_node3" [fillcolor="pink", label ="<tail> TAIL|<index> index\n 3 |{<value> value\n -20.000000 |<next> next\n 0 |<prev> prev\n 8}"]
+    "list_node4" [fillcolor="#C0FFC0", label ="<index> index\n 4 |{<value> value\n 20.000000 |<next> next\n 2 |<prev> prev\n 6}"]
+    "list_node5" [fillcolor="yellow", label ="<index> index\n 5 |{<value> value\n 1.#QNAN0 |<next> next\n 9 |<prev> prev\n -1}"]
+    "list_node6" [fillcolor="pink", label ="<head> HEAD|<index> index\n 6 |{<value> value\n 30.000000 |<next> next\n 4 |<prev> prev\n 0}"]
+    "list_node7" [fillcolor="#C0FFC0", label ="<index> index\n 7 |{<value> value\n -1000.000000 |<next> next\n 8 |<prev> prev\n 1}"]
+    "list_node8" [fillcolor="#C0FFC0", label ="<index> index\n 8 |{<value> value\n 1000.000000 |<next> next\n 3 |<prev> prev\n 7}"]
+    "list_node9" [fillcolor="yellow", label ="<index> index\n 9 |{<value> value\n 1.#QNAN0 |<next> next\n 10 |<prev> prev\n -1}"]
+    "list_node10" [fillcolor="yellow", label ="<index> index\n 10 |{<value> value\n 1.#QNAN0 |<next> next\n 11 |<prev> prev\n -1}"]
+    "list_node11" [fillcolor="yellow", label ="<index> index\n 11 |{<value> value\n 1.#QNAN0 |<next> next\n 12 |<prev> prev\n -1}"]
+    "list_node12" [fillcolor="yellow", label ="<index> index\n 12 |{<value> value\n 1.#QNAN0 |<next> next\n 13 |<prev> prev\n -1}"]
+    "list_node13" [fillcolor="yellow", label ="<index> index\n 13 |{<value> value\n 1.#QNAN0 |<next> next\n 14 |<prev> prev\n -1}"]
+    "list_node14" [fillcolor="yellow", label ="<index> index\n 14 |{<value> value\n 1.#QNAN0 |<next> next\n 15 |<prev> prev\n -1}"]
+    "list_node15" [fillcolor="yellow", label ="<index> index\n 15 |{<value> value\n 1.#QNAN0 |<next> next\n 16 |<prev> prev\n -1}"]
+    "list_node16" [fillcolor="yellow", label ="<index> index\n 16 |{<value> value\n 1.#QNAN0 |<next> next\n 17 |<prev> prev\n -1}"]
+    "list_node17" [fillcolor="yellow", label ="<index> index\n 17 |{<value> value\n 1.#QNAN0 |<next> next\n 18 |<prev> prev\n -1}"]
+    "list_node18" [fillcolor="yellow", label ="<index> index\n 18 |{<value> value\n 1.#QNAN0 |<next> next\n 19 |<prev> prev\n -1}"]
+    "list_node19" [fillcolor="yellow", label ="<index> index\n 19 |{<value> value\n 1.#QNAN0 |<next> next\n 20 |<prev> prev\n -1}"]
+    "list_node20" [fillcolor="yellow", label ="<index> index\n 20 |{<value> value\n 1.#QNAN0 |<next> next\n 0 |<prev> prev\n -1}"]
+    "list_node0":index -> "list_node1":index
+    "list_node0":next -> "list_node0":index[color="blue", constraint=false];
+    "list_node1":index -> "list_node2":index
+    "list_node1":next -> "list_node7":index[color="blue", constraint=false];
+    "list_node2":index -> "list_node3":index
+    "list_node2":next -> "list_node1":index[color="blue", constraint=false];
+    "list_node3":index -> "list_node4":index
+    "list_node3":next -> "list_node0":index[color="blue", constraint=false];
+    "list_node4":index -> "list_node5":index
+    "list_node4":next -> "list_node2":index[color="blue", constraint=false];
+    "list_node5":index -> "list_node6":index
+    "list_node6":index -> "list_node7":index
+    "list_node6":next -> "list_node4":index[color="blue", constraint=false];
+    "list_node7":index -> "list_node8":index
+    "list_node7":next -> "list_node8":index[color="blue", constraint=false];
+    "list_node8":index -> "list_node9":index
+    "list_node8":next -> "list_node3":index[color="blue", constraint=false];
+    "list_node9":index -> "list_node10":index
+    "list_node10":index -> "list_node11":index
+    "list_node11":index -> "list_node12":index
+    "list_node12":index -> "list_node13":index
+    "list_node13":index -> "list_node14":index
+    "list_node14":index -> "list_node15":index
+    "list_node15":index -> "list_node16":index
+    "list_node16":index -> "list_node17":index
+    "list_node17":index -> "list_node18":index
+    "list_node18":index -> "list_node19":index
+    "list_node19":index -> "list_node20":index
+}
